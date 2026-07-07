@@ -1,0 +1,6 @@
+1:"$Sreact.fragment"
+2:I[97367,["/hgc-website/_next/static/chunks/2h7_l5czlqpu9.js","/hgc-website/_next/static/chunks/14mrh2-p_w84d.js"],"ViewportBoundary"]
+3:I[97367,["/hgc-website/_next/static/chunks/2h7_l5czlqpu9.js","/hgc-website/_next/static/chunks/14mrh2-p_w84d.js"],"MetadataBoundary"]
+4:"$Sreact.suspense"
+5:I[27201,["/hgc-website/_next/static/chunks/2h7_l5czlqpu9.js","/hgc-website/_next/static/chunks/14mrh2-p_w84d.js"],"IconMark"]
+0:{"rsc":["$","$1","h",{"children":[null,["$","$L2",null,{"children":[["$","meta","0",{"charSet":"utf-8"}],["$","meta","1",{"name":"viewport","content":"width=device-width, initial-scale=1"}]]}],["$","div",null,{"hidden":true,"children":["$","$L3",null,{"children":["$","$4",null,{"name":"Next.Metadata","children":[["$","title","0",{"children":"Le livre — Passion d'une claveciniste pour les générations à venir"}],["$","meta","1",{"name":"description","content":"Le livre d'Huguette Grémy-Chauliac : Passion d'une claveciniste pour les générations à venir. Le récit d'une pionnière du clavecin, et de la femme derrière l'artiste."}],["$","link","2",{"rel":"icon","href":"/hgc-website/icon.png?icon.2tft4d8_opkgg.png","sizes":"512x512","type":"image/png"}],["$","$L5","3",{}]]}]}]}],["$","meta",null,{"name":"next-size-adjust","content":""}]]}],"isPartial":false,"staleTime":300,"varyParams":null,"buildId":"aZIAfZR9cqZv_cyJjyw5x"}
