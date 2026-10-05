@@ -25,14 +25,14 @@ export default function Accueil() {
         </p>
         <figure>
           <Image
-            src="/images/portrait-1948.jpg"
-            alt="Huguette Grémy-Chauliac au clavier, photographie en noir et blanc"
-            width={1796}
-            height={1669}
+            src="/images/portrait-clavecin.jpg"
+            alt="Huguette Grémy-Chauliac au clavecin, photographie en couleur"
+            width={1273}
+            height={1800}
             priority
           />
           <figcaption className="caption" style={{ marginTop: "8px" }}>
-            Photographie de couverture du livre.
+            Au clavecin.
           </figcaption>
         </figure>
       </section>
