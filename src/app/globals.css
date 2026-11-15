@@ -168,6 +168,16 @@ section + section { margin-top: 52px; }
 .gallery { list-style: none; display: grid; grid-template-columns: 1fr; gap: 24px; }
 @media (min-width: 768px) { .gallery { grid-template-columns: 1fr 1fr; } }
 
+/* ---------- the book: pages to browse, offers ---------- */
+.feuillet { list-style: none; display: grid; grid-template-columns: 1fr 1fr; gap: 16px; }
+@media (min-width: 768px) { .feuillet { grid-template-columns: repeat(4, 1fr); } }
+.feuillet img { border: 1px solid var(--filet); }
+.feuillet figcaption { margin-top: 6px; text-align: center; }
+.offres { list-style: none; display: grid; grid-template-columns: 1fr; gap: 20px; }
+@media (min-width: 768px) { .offres { grid-template-columns: 1fr 1fr; } }
+.offres .prix { color: var(--rouge); font-size: 30px; line-height: 1.2; margin: 4px 0 8px; }
+.offres a { display: inline-flex; align-items: center; min-height: 44px; }
+
 /* ---------- contact block ---------- */
 .contact-card { border: 1px solid var(--filet); padding: 22px 24px; }
 .contact-card p + p { margin-top: 0.4em; }
