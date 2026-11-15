@@ -12,6 +12,7 @@ export default function Footer() {
         <nav aria-label="Liens">
           <a href="https://www.instagram.com/huguettegremychauliac" rel="noopener">Instagram</a>
           <a href="mailto:HuguetteGremyChauliac@gmail.com">HuguetteGremyChauliac@gmail.com</a>
+          <a href="/conditions-de-vente/">Conditions de vente</a>
         </nav>
       </div>
     </footer>

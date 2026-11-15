@@ -9,6 +9,18 @@ export const metadata: Metadata = {
     "Le livre d'Huguette Grémy-Chauliac : Passion d'une claveciniste pour les générations à venir. Le récit d'une pionnière du clavecin, et de la femme derrière l'artiste.",
 };
 
+const BOUTIQUE_LIVRE =
+  "https://www.helloasso.com/associations/prevention-recherche-education-a-la-sante-et-la-solidarite/boutiques/huguette-gremy-chauliac";
+const BOUTIQUE_EBOOK =
+  "https://www.helloasso.com/associations/prevention-recherche-education-a-la-sante-et-la-solidarite/boutiques/ebook-passion-d-une-claveciniste-huguette-gremy-chauliac";
+
+const FEUILLETS = [
+  { src: "/images/livre-page-12.jpg", alt: "Page 12 : Huguette Grémy-Chauliac jeune, au piano", legende: "Page 12" },
+  { src: "/images/livre-page-14.jpg", alt: "Page 14 : premier chapitre, « Aux origines de ma vocation »", legende: "Aux origines de ma vocation" },
+  { src: "/images/livre-page-85.jpg", alt: "Page 85 : « À recevoir chez vous si vous le désirez »", legende: "À recevoir chez vous" },
+  { src: "/images/livre-quatrieme.jpg", alt: "Quatrième de couverture du livre", legende: "Quatrième de couverture" },
+];
+
 export default function Livre() {
   return (
     <div className="wrap">
@@ -70,16 +82,66 @@ export default function Livre() {
 
       <section>
         <Divider />
+        <h2>Feuilleter le livre</h2>
+        <ul className="feuillet" style={{ marginTop: "16px" }}>
+          {FEUILLETS.map((f) => (
+            <li key={f.src}>
+              <figure>
+                <Image src={f.src} alt={f.alt} width={599} height={843} />
+                <figcaption className="caption">{f.legende}</figcaption>
+              </figure>
+            </li>
+          ))}
+        </ul>
+      </section>
+
+      <section>
+        <Divider />
         <h2>Obtenir le livre</h2>
-        <p style={{ margin: "12px 0" }}>
-          Une version numérique (ebook) de l&rsquo;ouvrage est disponible. Pour recevoir
-          le livre — papier ou numérique — écrivez-nous&nbsp;: voir la page{" "}
-          <Link href="/contact/">contact</Link>.
+        <ul className="offres" style={{ marginTop: "16px" }}>
+          <li className="contact-card">
+            <h3>Le livre imprimé</h3>
+            <p className="prix">20&nbsp;€</p>
+            <p className="caption">
+              100 pages, 15 × 21 cm, couleur, papier couché brillant.
+              <br />
+              ISBN 979-10-990059-0-8.
+            </p>
+            <p className="caption">
+              Envoi par La Poste en lettre suivie, en France métropolitaine&nbsp;: 7&nbsp;€
+              par commande. Pensez à ajouter les frais d&rsquo;envoi à votre panier.
+            </p>
+            <p>
+              <a href={BOUTIQUE_LIVRE} rel="noopener">
+                Commander le livre sur HelloAsso →
+              </a>
+            </p>
+          </li>
+          <li className="contact-card">
+            <h3>Le livre numérique</h3>
+            <p className="prix">10&nbsp;€</p>
+            <p className="caption">
+              Le livre complet en PDF, avec sa couverture en couleur. Lisible sur ordinateur,
+              tablette et téléphone.
+              <br />
+              ISBN 979-10-990059-1-5.
+            </p>
+            <p className="caption">
+              Le lien de téléchargement s&rsquo;affiche juste après le paiement et vous est
+              envoyé dans l&rsquo;e-mail de confirmation.
+            </p>
+            <p>
+              <a href={BOUTIQUE_EBOOK} rel="noopener">
+                Acheter l&rsquo;ebook sur HelloAsso →
+              </a>
+            </p>
+          </li>
+        </ul>
+        <p className="caption" style={{ marginTop: "16px" }}>
+          Paiement sécurisé par HelloAsso, au profit de l&rsquo;association PRESS.
+          Voir les <Link href="/conditions-de-vente/">conditions de vente</Link>. Une
+          question&nbsp;? <Link href="/contact/">Écrivez-nous</Link>.
         </p>
-        <div className="placeholder">
-          [À compléter — modalités de diffusion du livre (prix, envoi, ebook) à préciser
-          avec l&rsquo;association PRESS.]
-        </div>
       </section>
 
       <section>
