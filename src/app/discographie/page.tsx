@@ -45,7 +45,7 @@ export default function Discographie() {
             <div className="placeholder">[Pochette à venir]</div>
             <div className="meta">
               <p className="title">Louis Couperin — Suites</p>
-              <p className="caption">Lygia Digital, 2006</p>
+              <p className="caption">Ligia Digital, 2006</p>
             </div>
           </li>
           <li>

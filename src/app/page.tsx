@@ -74,6 +74,27 @@ export default function Accueil() {
         <p style={{ marginTop: "10px" }}>
           <Link href="/ecouter/">La page d&rsquo;écoute →</Link>
         </p>
+
+        <h3 style={{ marginTop: "36px" }}>
+          Écouter la Sarabande de la Suite en ré majeur de Louis Couperin
+        </h3>
+        <figure style={{ maxWidth: "440px", margin: "14px 0 18px" }}>
+          <Image
+            src="/images/jacket-couperin-suites.jpg"
+            alt="Pochette du CD Louis Couperin, 5 Suites pour clavecin, Huguette Grémy-Chauliac (Ligia Digital)"
+            width={500}
+            height={500}
+          />
+        </figure>
+        <Player
+          src="/audio/couperin-sarabande-re-majeur.m4a"
+          title="Louis Couperin — Suite en ré majeur, Sarabande"
+        />
+        <p className="caption" style={{ marginTop: "10px" }}>
+          Louis Couperin — Suite en ré majeur, IV. Sarabande. Huguette
+          Grémy-Chauliac, clavecin Pierre Donzelague, 1716. Extrait du CD{" "}
+          <em>5 Suites pour clavecin</em>, Ligia Digital.
+        </p>
       </section>
 
       {/* ------- Discographie ------- */}
@@ -101,10 +122,22 @@ export default function Accueil() {
             </div>
           </li>
           <li>
+            <figure>
+              <Image
+                src="/images/jacket-couperin-suites.jpg"
+                alt="Pochette du CD Louis Couperin, 5 Suites pour clavecin, Huguette Grémy-Chauliac"
+                width={500}
+                height={500}
+              />
+            </figure>
             <div className="meta">
-              <p className="title">Louis Couperin — Suites</p>
-              <p className="caption">Lygia Digital, 2006</p>
-              <p className="title" style={{ marginTop: "14px" }}>Charles Dieupart — Six Suites</p>
+              <p className="title">Louis Couperin — 5 Suites pour clavecin</p>
+              <p className="caption">Ligia Digital, 2006</p>
+            </div>
+          </li>
+          <li>
+            <div className="meta">
+              <p className="title">Charles Dieupart — Six Suites</p>
               <p className="caption">Arion / Pierre Vérany, 1999</p>
               <p className="title" style={{ marginTop: "14px" }}>
                 Élisabeth Jacquet de la Guerre — Cantates
